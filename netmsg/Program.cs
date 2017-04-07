@@ -71,7 +71,7 @@ namespace netmsg
                     {
                         continue;
                     }
-                    sender.Send(string.Format("{0}: {1}", username, message));
+                    sender.Send(string.Format("{0}: {1}", args[0], message));
                 }
                 else
                 {
