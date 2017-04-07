@@ -21,6 +21,7 @@ namespace netmsg
             }
             Console.WriteLine("send command syntax: \"send username message contents\"");
             Console.WriteLine("you do not need to put quotes around your message");
+            Console.WriteLine("type \"exit\" to quit");
             string hostName = Dns.GetHostName();
             IPHostEntry hostEntry = Dns.GetHostEntry(hostName);
             IPAddress ipv4 = null;
