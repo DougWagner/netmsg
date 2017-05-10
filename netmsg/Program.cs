@@ -19,6 +19,11 @@ namespace netmsg
                 Console.WriteLine("Usage: netmsg <username>");
                 return;
             }
+            if ( Encoding.UTF8.GetBytes(args[0]).Length > 1024)
+            {
+                Console.WriteLine("Username too large");
+                return;
+            }
             Console.WriteLine("send command syntax: \"send username message contents\"");
             Console.WriteLine("you do not need to put quotes around your message");
             Console.WriteLine("type \"exit\" to quit");
